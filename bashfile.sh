@@ -28,21 +28,20 @@ else
     echo "Kafka Connect not found. Skipping..."
 fi
 
-# Start producer
-echo "Starting producer..."
+# Start producerconsumerfpgrowth.py
 python producer.py &
 
 # Start Apriori consumer
 echo "Starting Apriori consumer..."
-python apriori_consumer.py &
+python consumeraapriori.py &
 
 # Start PCY consumer
 echo "Starting PCY consumer..."
-python pcy_consumer.py &
+python consumerpcy.py &
 
 # Start FP-Growth consumer
 echo "Starting FP-Growth consumer..."
-python fpgrowth_consumer.py &
+python consumerfpgrowth.py &
 
 # Wait for a key press to stop consumers and clean up
 echo "Press any key to stop consumers and clean up..."
@@ -51,9 +50,9 @@ read -n 1 -s
 # Stop consumers
 echo "Stopping consumers..."
 pkill -f "python producer.py"
-pkill -f "python apriori_consumer.py"
-pkill -f "python pcy_consumer.py"
-pkill -f "python fpgrowth_consumer.py"
+pkill -f "python consumeraapriori.py"
+pkill -f "python consumerpcy.py"
+pkill -f "python consumerfpgrowth.py"
 
 # Stop Kafka Connect (if needed)
 echo "Stopping Kafka Connect..."
