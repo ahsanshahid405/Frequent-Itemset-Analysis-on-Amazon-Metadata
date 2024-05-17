@@ -56,5 +56,5 @@ Implement a custom algorithm for innovative analysis in the third consumer.
 Ensure the analysis is beyond straightforward calculations and provides significant insights.
 
 # Database Integration
-Database Choice: Use a NoSQL database like MongoDB for storing results.
+* Database Choice: Use a NoSQL database like MongoDB for storing results.
 Modify Consumers: Connect each consumer to the database and store the results.
