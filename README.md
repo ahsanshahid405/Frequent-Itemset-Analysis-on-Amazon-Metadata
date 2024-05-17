@@ -40,22 +40,21 @@ Develop a producer application that streams the preprocessed data in real time t
 # Consumer Applications:
 Create three consumer applications that subscribe to the producer's data stream:
 
-Consumer 1: Implements the Apriori algorithm.
-Consumer 2: Implements the PCY algorithm.
-Consumer 3: Implements a custom algorithm for innovative analysis.
+* Consumer 1: Implements the Apriori algorithm.
+* Consumer 2: Implements the PCY algorithm.
+* Consumer 3: Implements a custom algorithm for innovative analysis.
 # Frequent Itemset Mining
-Apriori Algorithm:
-
+* Apriori Algorithm:
 Implement the Apriori algorithm in one consumer.
 Print real-time insights and associations.
-PCY Algorithm:
-
+* PCY Algorithm:
 Implement the PCY algorithm in another consumer.
 Print real-time insights and associations.
-Custom Analysis:
 
+* Custom Analysis:
 Implement a custom algorithm for innovative analysis in the third consumer.
 Ensure the analysis is beyond straightforward calculations and provides significant insights.
+
 # Database Integration
 Database Choice: Use a NoSQL database like MongoDB for storing results.
 Modify Consumers: Connect each consumer to the database and store the results.
