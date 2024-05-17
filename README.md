@@ -1,4 +1,4 @@
-### Introduction
+# Introduction
 This project performs frequent itemset analysis on the Amazon Metadata dataset using streaming data techniques. The main goal is to extract valuable insights and associations from product data, which can be used to understand consumer behavior and improve recommendation systems. The dataset includes various product attributes such as ID, title, features, description, price, images, related products, sales rank, brand, categories, and technical details.
 
 # Dataset Description
