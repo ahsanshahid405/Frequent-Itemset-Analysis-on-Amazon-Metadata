@@ -2,26 +2,26 @@
 This project performs frequent itemset analysis on the Amazon Metadata dataset using streaming data techniques. The main goal is to extract valuable insights and associations from product data, which can be used to understand consumer behavior and improve recommendation systems. The dataset includes various product attributes such as ID, title, features, description, price, images, related products, sales rank, brand, categories, and technical details.
 
 # Dataset Description
-asin: ID of the product
-title: Name of the product
-feature: Bullet-point format features of the product
-description: Description of the product
-price: Price in US dollars (at time of crawl)
-imageURL: URL of the product image
-related: Related products (also bought, also viewed, bought together, buy after viewing)
-salesRank: Sales rank information
-brand: Brand name
-categories: List of categories the product belongs to
-tech1: First technical detail table of the product
-tech2: Second technical detail table of the product
-similar: Similar product table
+* asin: ID of the product
+* title: Name of the product
+* feature: Bullet-point format features of the product
+* description: Description of the product
+* price: Price in US dollars (at time of crawl)
+* imageURL: URL of the product image
+* related: Related products (also bought, also viewed, bought together, buy after viewing)
+* salesRank: Sales rank information
+* brand: Brand name
+* categories: List of categories the product belongs to
+* tech1: First technical detail table of the product
+* tech2: Second technical detail table of the product
+* similar: Similar product table
 # Dependencies
-Python
-Kafka
-MongoDB
-Confluent Kafka
-JSON
-Pre-Processing
+* Python
+* Kafka
+* MongoDB
+* Confluent Kafka
+* JSON
+# Pre-Processing
 Load the Sampled Amazon Dataset:
 Load the sampled Amazon dataset from a JSON file.
 
